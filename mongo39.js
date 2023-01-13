@@ -55,7 +55,6 @@ db.topics.insertMany([
 //To show inserted Topics
 db.topics.find().pretty();
 
-/*-------------------------------------------------------------------------------------------*/
 // insert task collection	
 
 db.tasks.insertMany(
@@ -161,7 +160,7 @@ db.codekata.insertMany([
 db.codekata.find().pretty();
 
 	  
-	 /* -----------------------------------------------------------------------------------------*/
+	 
 
 	// inserting mentors collection
 	
@@ -191,7 +190,6 @@ db.codekata.find().pretty();
 
  db.mentors.find().pretty();
 
- 	 /* ------------------------------------------------------------------------------------------*/
 
     //  inserting users collection
 db.users.insertMany([
@@ -269,4 +267,4 @@ db.users.find().pretty();
 // Find all the topics and tasks which are thought in the month of October
 db.zenStackdB.find({})
 //To delete a record
-db.users.deleteMany({"name":"Prathamesh Kamble"})
+db.users.deleteOne({"name":"Prathamesh Kamble"})
